@@ -60,14 +60,26 @@
     } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
     /********************* 1) CONFIG ******************************/
-    const FIREBASE_CONFIG = {
+   /* const FIREBASE_CONFIG = {
       apiKey: "REPLACE_ME",
       authDomain: "REPLACE_ME",
       projectId: "REPLACE_ME",
       // storageBucket not needed for this prototype
       // messagingSenderId not needed
       appId: "REPLACE_ME",
-    };
+    };*/
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCVTrJbUeDM9JXNXWyFlkNJPQ0xh-Q6hns",
+  authDomain: "compstudy-90c6c.firebaseapp.com",
+  projectId: "compstudy-90c6c",
+  storageBucket: "compstudy-90c6c.firebasestorage.app",
+  messagingSenderId: "490815558883",
+  appId: "1:490815558883:web:6d4f9706adc237ae4aa1d6",
+  measurementId: "G-Y6E8FMNQ49"
+};
+
+    
 
     const app = initializeApp(FIREBASE_CONFIG);
     const auth = getAuth(app);
